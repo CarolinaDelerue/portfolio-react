@@ -1,15 +1,26 @@
-// src/components/CardHome.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const CardHome = ({ title, description, imageUrl, link }) => {
+const CardHome = ({ title, description, imageSrc, link }) => {
+  const navigate = useNavigate(); // Initialiser le hook useNavigate
+
+  const handleClick = () => {
+    navigate(link); // Rediriger vers le lien sans recharger la page
+  };
+
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="block max-w-sm mx-auto transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-lg">
-      <div className="p-4">
-        <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-        <p className="mt-2 text-gray-600">{description}</p>
+    <div
+      onClick={handleClick}
+      className="flex flex-col items-center max-w-xs p-6 transition-transform duration-300 bg-gray-900 shadow-lg cursor-pointer rounded-3xl hover:scale-105"
+    >
+      <h3 className="text-xl font-semibold text-white">{title}</h3>
+      {description && (
+        <p className="mt-1 text-sm text-gray-400">{description}</p>
+      )}
+      <div className="flex items-center justify-center w-full mt-6">
+        <img src={imageSrc} alt={title} className="w-full h-auto rounded-b-3xl" />
       </div>
-      <img src={imageUrl} alt={title} className="object-cover w-full h-48 rounded-b-lg" />
-    </a>
+    </div>
   );
 };
 
