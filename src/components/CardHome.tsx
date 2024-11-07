@@ -2,16 +2,16 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const CardHome = ({ title, description, imageSrc, link }) => {
-  const navigate = useNavigate(); // Initialiser le hook useNavigate
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(link); // Rediriger vers le lien sans recharger la page
+    navigate(link);
   };
 
   return (
     <div
       onClick={handleClick}
-      className="flex flex-col items-center max-w-xs p-6 transition-transform duration-300 bg-gray-900 shadow-lg cursor-pointer rounded-3xl hover:scale-105"
+      className="flex flex-col items-center w-full h-64 max-w-md p-6 transition-transform duration-300 bg-gray-900 shadow-lg cursor-pointer rounded-3xl hover:scale-105"
     >
       <h3 className="text-xl font-semibold text-white">{title}</h3>
       {description && (
