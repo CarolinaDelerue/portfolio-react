@@ -21,13 +21,15 @@ const Home = () => {
                     title="My projects"
                     description="Selected personal or in-house projects"
                     imageSrc="/assets/skillsAsset.png"
-                    link="/about"
+                    link="/projects"
                 />
                 <CardHome
-                    title="Contact"
-                    description="Selected personal or in-house projects"
-                    imageSrc="/assets/skillsAsset.png"
-                    link="/about"
+                className="bg-gray-500"
+                    title="Say hello"
+                    description="for a job offer or just to connect."
+                    link="/contact"
+                    icon="🤘"
+                    backgroundImage="/assets/background.png"
                 />
             </div>
         </div>
