@@ -17,7 +17,7 @@ const Projects = () => {
       challenge: 'Creating reusable components in React for managing the photo gallery and detailed information about the apartments.',
       skills: ['React', 'JSX', 'CSS', 'Figma', 'state management'],
       link: 'https://kasa-cd.netlify.app/',
-         imageSrc: '/assets/kasa.png'
+      imageSrc: '/assets/kasa.png'
     },
     {
       title: 'NuxtShip',
@@ -25,7 +25,7 @@ const Projects = () => {
       challenge: 'Creation of an e-commerce template with Nuxt Content.',
       skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://nuxtship.vercel.app/',
-         imageSrc: '/assets/nuxtship.png'
+      imageSrc: '/assets/nuxtship.png'
     },
     {
       title: 'Podiatrist website',
@@ -33,7 +33,7 @@ const Projects = () => {
       challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
       skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://podiatrist.nuxt.space/',
-         imageSrc: '/assets/podiatrist.png'
+      imageSrc: '/assets/podiatrist.png'
     },
     {
       title: 'Kine website',
@@ -41,7 +41,7 @@ const Projects = () => {
       challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
       skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://kine.nuxt.space/',
-         imageSrc: '/assets/kine.png'
+      imageSrc: '/assets/kine.png'
     },
     {
       title: 'Doctor website',
@@ -49,7 +49,7 @@ const Projects = () => {
       challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
       skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://doctor.nuxt.space/',
-         imageSrc: '/assets/doctor.png'
+      imageSrc: '/assets/doctor.png'
     },
     {
       title: 'Psychologist website',
@@ -57,7 +57,7 @@ const Projects = () => {
       challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
       skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://psychologist.nuxt.space/',
-         imageSrc: '/assets/psychologist.png'
+      imageSrc: '/assets/psychologist.png'
     }
   ];
 
