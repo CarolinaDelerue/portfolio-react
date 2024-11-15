@@ -8,7 +8,7 @@ const CustomCard = ({ imageSrc, title, description, challenge, tags, linkIcon, l
           <img
             src={imageSrc}
             alt={title}
-            className="w-32 h-32 rounded-xl" // Augmentation de la taille de la photo
+            className="object-cover w-32 h-32 rounded-xl" // Augmentation de la taille de la photo
           />
         </div>
         <div className="flex-grow">
