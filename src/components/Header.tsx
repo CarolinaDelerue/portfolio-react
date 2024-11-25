@@ -51,9 +51,9 @@ const Header = () => {
         <nav
           className={`${
             menuOpen ? 'block' : 'hidden'
-          } md:flex md:space-x-6 absolute top-16 right-0 bg-gray-700 w-full p-4 space-y-4 md:space-y-0 md:flex-row md:bg-transparent md:absolute md:top-auto md:right-auto md:w-auto md:p-0`}
+          } absolute top-16 right-0 bg-gray-700 w-full p-4 space-y-4 md:space-y-0 md:static md:w-auto md:flex md:justify-end md:bg-transparent`}
         >
-          <ul className="flex flex-col items-end space-x-0 md:flex-row md:space-x-8 md:space-y-0">
+          <ul className="flex flex-col items-end space-y-4 md:flex-row md:space-x-8 md:space-y-0">
             <li>
               <Link
                 to="/"
