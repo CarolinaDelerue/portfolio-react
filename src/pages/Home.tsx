@@ -6,11 +6,11 @@ import MindCard from '../components/MindCard';
 const Home = () => {
     return (
         <div className="container mx-auto mt-12">
-            <div className="flex space-x-6">
+            <div className="flex flex-col space-y-6 md:flex-row md:space-x-6">
                 <div className="flex flex-col space-y-6">
-                    <LocationCard className="flex-1 h-full" />
+                    <LocationCard/>
                 </div>
-                <div className="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-2">
+                <div className="grid grid-cols-1 gap-6 justify-items-center lg:grid-cols-2">
                     <CardHome
                         title="My skills"
                         description="Tools I enjoy Using"

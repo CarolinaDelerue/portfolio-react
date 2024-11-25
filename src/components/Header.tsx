@@ -1,38 +1,103 @@
-// src/components/Header.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Fermer le menu burger si l'utilisateur clique en dehors du menu
+  useEffect(() => {
+    const closeMenu = (e) => {
+      if (e.target.closest('nav') || e.target.closest('button')) return;
+      setMenuOpen(false);
+    };
+
+    document.addEventListener('click', closeMenu);
+    return () => document.removeEventListener('click', closeMenu);
+  }, []);
+
+  // Fonction pour basculer l'état du menu burger
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <header className="p-4 text-white bg-gray-800 shadow-md">
+    <header className="p-4 bg-gray-800 shadow-md">
       <div className="container flex items-center justify-between mx-auto">
-        <h1 className="text-2xl font-bold">My Portfolio</h1>
-        <nav>
-          <ul className="flex space-x-4">
+        {/* Logo ou nom du portfolio */}
+        <h1 className="text-2xl font-bold text-white">My Portfolio</h1>
+
+        {/* Icône du menu burger (visible sur mobile uniquement) */}
+        <button
+          onClick={toggleMenu}
+          className="text-white md:hidden focus:outline-none"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        {/* Menu burger, visible uniquement en mobile */}
+        <nav
+          className={`${
+            menuOpen ? 'block' : 'hidden'
+          } md:flex md:space-x-6 absolute top-16 right-0 bg-gray-700 w-full p-4 space-y-4 md:space-y-0 md:flex-row md:bg-transparent md:absolute md:top-auto md:right-auto md:w-auto md:p-0`}
+        >
+          <ul className="flex flex-col items-end space-x-0 md:flex-row md:space-x-8 md:space-y-0">
             <li>
-              <Link to="/" className="hover:text-gray-400">
+              <Link
+                to="/"
+                className="text-white hover:text-gray-400"
+                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-gray-400">
+              <Link
+                to="/about"
+                className="text-white hover:text-gray-400"
+                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+              >
                 About
               </Link>
             </li>
             <li>
-              <a href="/projects" className="hover:text-gray-400">
+              <Link
+                to="/projects"
+                className="text-white hover:text-gray-400"
+                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/skills" className="hover:text-gray-400">
+              <Link
+                to="/skills"
+                className="text-white hover:text-gray-400"
+                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+              >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-400">
+              <Link
+                to="/contact"
+                className="text-white hover:text-gray-400"
+                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

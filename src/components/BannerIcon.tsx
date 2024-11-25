@@ -48,7 +48,7 @@ const TechBanner: React.FC = () => {
   return (
     <div className="relative w-full overflow-hidden bg-gray-800">
       <div
-        className="flex items-center justify-start space-x-12 animate-marquee whitespace-nowrap"
+        className="flex items-center justify-start space-x-6 sm:space-x-8 lg:space-x-12 animate-marquee whitespace-nowrap"
         style={{ animationDuration: '20s' }} // Réduction de la cadence pour un mouvement fluide
       >
         {techLogos.map((logo, index) => (
@@ -61,7 +61,7 @@ const TechBanner: React.FC = () => {
               src={logo.src}
               alt={logo.alt}
               style={logo.style || {}}
-              className="h-24 transition-transform duration-300 hover:scale-110"
+              className="h-16 transition-transform duration-300 sm:h-20 md:h-24 lg:h-28 xl:h-32 hover:scale-110"
             />
           </div>
         ))}
@@ -76,7 +76,7 @@ const TechBanner: React.FC = () => {
               src={logo.src}
               alt={logo.alt}
               style={logo.style || {}}
-              className="h-24 transition-transform duration-300 hover:scale-110"
+              className="h-16 transition-transform duration-300 sm:h-20 md:h-24 lg:h-28 xl:h-32 hover:scale-110"
             />
           </div>
         ))}

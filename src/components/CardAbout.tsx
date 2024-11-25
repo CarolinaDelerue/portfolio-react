@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-interface CardHomeProps {
+interface CardAboutProps {
   backgroundImage?: string;
   title?: string;
   description?: string;
@@ -12,7 +12,7 @@ interface CardHomeProps {
   softSkills?: string[]; // Nouvelle propriété pour les soft skills
 }
 
-const CardHome: FC<CardHomeProps> = ({
+const CardAbout: FC<CardAboutProps> = ({
   backgroundImage,
   title,
   description,
@@ -44,7 +44,7 @@ const CardHome: FC<CardHomeProps> = ({
       style={containerStyle}
       className={`flex flex-col items-center w-full h-64 max-w-md p-6 transition-transform duration-300 bg-gray-900 shadow-lg ${
         link ? 'cursor-pointer hover:scale-105' : 'cursor-default'
-      } rounded-3xl ${!imageSrc ? 'justify-center' : ''} ${className}`}
+      } rounded-3xl ${!imageSrc ? 'justify-center' : ''} ${className} m-4`} // Ajout de la marge ici (m-4)
     >
       {icon && <div className="mb-2 text-3xl">{icon}</div>}
       {title && <h3 className="text-xl font-semibold text-white">{title}</h3>}
@@ -60,11 +60,11 @@ const CardHome: FC<CardHomeProps> = ({
         </ul>
       )}
       {imageSrc && (
-        <div className="flex items-center justify-center w-full mt-6">
+        <div className="flex items-center justify-center w-full mt-6 overflow-hidden">
           <img
             src={imageSrc}
             alt={title || 'Card image'}
-            className="w-full h-auto rounded-b-3xl"
+            className="object-contain w-full h-full rounded-b-3xl" // Ajout de object-contain et h-full
           />
         </div>
       )}
@@ -72,4 +72,4 @@ const CardHome: FC<CardHomeProps> = ({
   );
 };
 
-export default CardHome;
+export default CardAbout;
