@@ -2,7 +2,6 @@ import CardSkills from '../components/CardSkills';
 import BannerIcon from '../components/BannerIcon';
 
 function App() {
-  // Listes de compétences
   const webIntegrationSkills = [
     "Intégrer du contenu conformément à une maquette avec HTML et CSS",
     "Implémenter une interface responsive avec HTML et CSS",
@@ -47,16 +46,18 @@ function App() {
   const openSourceSkills = ["Contributrice à l'open source - Nuxt"];
 
   return (
-    <div className="container px-4 mx-auto mt-12">
-      <div>
+    <>
+      {/* Bannière pleine page */}
+      <div className="mt-16">
+        <BannerIcon />
+      </div>
+
+      {/* Contenu principal */}
+      <div className="container px-4 mx-auto mt-12">
         <h1 className="py-12 text-2xl font-bold text-center text-white sm:text-3xl md:text-4xl">
           My skills
         </h1>
-        <div className="py-12">
-          <BannerIcon />
-        </div>
         <div className="grid grid-cols-1 gap-6 px-4 py-6 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Le px-4 assure que les cartes sont espacées des bords */}
           <CardSkills
             title="Intégration Web"
             description="Voici un aperçu de mes compétences en intégration HTML/CSS."
@@ -107,7 +108,7 @@ function App() {
           />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

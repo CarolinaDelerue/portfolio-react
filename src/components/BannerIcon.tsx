@@ -46,7 +46,7 @@ const TechBanner: React.FC = () => {
   ];
 
   return (
-    <div className="relative w-full overflow-hidden bg-gray-800">
+    <div className="relative flex items-center justify-center overflow-hidden bg-gray-800">
       <div
         className="flex items-center justify-start space-x-6 sm:space-x-8 lg:space-x-12 animate-marquee whitespace-nowrap"
         style={{ animationDuration: '20s' }} // Réduction de la cadence pour un mouvement fluide
