@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-const LocationCard = () => {
-  const [time, setTime] = useState(new Date().toLocaleTimeString());
+const LocationCard: React.FC = () => {
+  const [time, setTime] = useState<string>(new Date().toLocaleTimeString());
 
   useEffect(() => {
     const timer = setInterval(() => {

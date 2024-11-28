@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   // Fermer le menu burger si l'utilisateur clique en dehors du menu
   useEffect(() => {
-    const closeMenu = (e) => {
-      if (e.target.closest('nav') || e.target.closest('button')) return;
-      setMenuOpen(false);
+    const closeMenu = (e: MouseEvent) => {
+      if (e.target instanceof HTMLElement) {
+        if (e.target.closest('nav') || e.target.closest('button')) return;
+        setMenuOpen(false);
+      }
     };
 
     document.addEventListener('click', closeMenu);
-    return () => document.removeEventListener('click', closeMenu);
+    return () => {
+      document.removeEventListener('click', closeMenu);
+    };
   }, []);
 
   // Fonction pour basculer l'état du menu burger
