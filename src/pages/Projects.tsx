@@ -32,8 +32,8 @@ const Projects: React.FC = () => {
       description: 'Creation of my portfolio',
       challenge: 'Creation of my portfolio with React',
       skills: ['React', 'Tailwind CSS', 'Responsive Design'],
-      link: 'https://nuxtship.vercel.app/',
-      imageSrc: '/assets/nuxtship.png',
+      link: 'https://carolina-portfolio-react.netlify.app/',
+      imageSrc: '/assets/portfolio.png',
     },
     {
       title: 'NuxtShip',
