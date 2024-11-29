@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
 import { SiNuxtdotjs, SiTailwindcss, SiFigma } from 'react-icons/si';
 import { VscMarkdown } from 'react-icons/vsc';

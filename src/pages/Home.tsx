@@ -1,7 +1,6 @@
 // src/pages/Home.jsx
 import CardHome from '../components/CardHome';
 import LocationCard from '../components/LocationCard';
-import MindCard from '../components/MindCard';
 
 const Home = () => {
     return (
