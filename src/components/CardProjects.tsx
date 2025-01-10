@@ -32,7 +32,7 @@ const CustomCard: React.FC<CustomCardProps> = ({
   linkUrl,
 }) => {
   return (
-    <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="block">
+    <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="block group">
       <div className="flex flex-col items-center p-4 space-y-4 bg-transparent border-b border-gray-700 md:flex-row md:space-y-0 md:space-x-6">
         <div className="flex-shrink-0">
           <img
@@ -55,11 +55,10 @@ const CustomCard: React.FC<CustomCardProps> = ({
             ))}
           </div>
         </div>
-        {linkIcon && (
-          <div className="flex-shrink-0 text-center md:text-right">
-            <span className="text-xl text-gray-400 md:text-2xl">{linkIcon}</span>
-          </div>
-        )}
+
+          <div className="flex-shrink-0 text-center transition-opacity duration-300 opacity-0 md:text-right group-hover:opacity-100">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6v2H5v12h12v-6zM13 3v2h4.586l-7.793 7.793l1.414 1.414L19 6.414V11h2V3z"/></svg>          </div>
+
       </div>
     </a>
   );

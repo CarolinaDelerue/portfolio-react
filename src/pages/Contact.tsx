@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="flex items-center justify-center min-h-screen text-white bg-gray-900">
+    <section className="flex items-center justify-center text-white bg-gray-900">
       <div className="w-full max-w-md p-6 bg-gray-800 rounded-lg shadow-lg">
         <h2 className="mb-4 text-xl font-bold text-center">New message to Carolina</h2>
         <form onSubmit={handleSubmit} className="space-y-4">

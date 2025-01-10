@@ -47,10 +47,10 @@ function App() {
 
   return (
     <>
-      {/* Bannière pleine page */}
+      {/* Bannière pleine page
       <div className="mt-16">
         <BannerIcon />
-      </div>
+      </div> */}
 
       {/* Contenu principal */}
       <div className="container px-4 mx-auto mt-12">

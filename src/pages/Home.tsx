@@ -5,7 +5,7 @@ import LocationCard from '../components/LocationCard';
 const Home = () => {
     return (
         <div className="container mx-auto mt-12">
-            <div className="flex flex-col space-y-6 md:flex-row md:space-x-6">
+            <div className="flex flex-col items-center justify-center h-full space-y-6 w-full4 gap-x-4 md:flex-row">
                 <div className="flex flex-col space-y-6">
                     <LocationCard/>
                 </div>

@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
       description: 'Creation of my portfolio',
       challenge: 'Creation of my portfolio with React',
       skills: ['React', 'Tailwind CSS', 'Responsive Design'],
-      link: 'https://carolina-portfolio-react.netlify.app/',
+      link: ' ',
       imageSrc: '/assets/portfolio.png',
     },
     {
@@ -90,7 +90,7 @@ const Projects: React.FC = () => {
               description={project.description}
               challenge={project.challenge}
               tags={project.skills}
-              linkIcon="➡️"
+              // linkIcon=""
               linkUrl={project.link}
             />
           ))}
