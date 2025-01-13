@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
       description: 'Creation of my portfolio',
       challenge: 'Creation of my portfolio with React',
       skills: ['React', 'Tailwind CSS', 'Responsive Design'],
-      link: ' ',
+      link: 'https://portfolio-react-caro.netlify.app/',
       imageSrc: '/assets/portfolio.png',
     },
     {

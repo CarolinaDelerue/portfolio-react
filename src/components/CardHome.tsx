@@ -35,7 +35,7 @@ const CardHome: React.FC<CardHomeProps> = ({
     <div
       onClick={handleClick}
       style={containerStyle}
-      className={`flex flex-col items-center w-full h-64 max-w-md p-6 transition-transform duration-300 bg-gray-900 shadow-lg cursor-pointer rounded-3xl hover:scale-105 ${
+      className={`flex flex-col items-center w-full h-full max-w-md p-6 transition-transform duration-300 bg-gray-900 shadow-lg cursor-pointer rounded-3xl hover:scale-105 ${
         !imageSrc ? 'justify-center' : ''
       } ${className}`}
     >
