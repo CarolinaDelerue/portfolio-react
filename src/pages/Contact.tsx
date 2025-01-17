@@ -1,17 +1,14 @@
 const Contact: React.FC = () => {
   return (
-    <section className="flex items-center justify-center min-h-screen px-4 text-white bg-black">
-      <div className="relative max-w-md p-8 text-center rounded-lg shadow-lg sm:p-12 bg-gradient-to-b from-gray-800 to-black sm:max-w-3xl">
-        {/* Background Stars */}
-        <div className="absolute inset-0 bg-[url('https://source.unsplash.com/featured/?stars,space')] bg-cover bg-center opacity-10"></div>
-
+    <section className="flex items-center justify-center min-h-screen px-4 text-white bg-[url('https://source.unsplash.com/featured/?stars,space')] bg-cover bg-center">
+      <div className="relative max-w-md p-8 text-center rounded-lg shadow-lg sm:p-12 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 sm:max-w-3xl">
         {/* Space Elements */}
-        <div className="absolute w-16 h-16 bg-blue-500 rounded-full -top-10 -left-10 sm:-top-12 sm:-left-12 sm:w-24 sm:h-24 blur-xl opacity-30"></div>
-        <div className="absolute w-24 h-24 bg-purple-500 rounded-full -bottom-10 -right-10 sm:-bottom-12 sm:-right-12 sm:w-36 sm:h-36 blur-2xl opacity-30"></div>
+        <div className="absolute w-16 h-16 bg-blue-400 rounded-full opacity-50 -top-10 -left-10 sm:-top-12 sm:-left-12 sm:w-24 sm:h-24 blur-2xl"></div>
+        <div className="absolute w-24 h-24 bg-purple-400 rounded-full -bottom-10 -right-10 sm:-bottom-12 sm:-right-12 sm:w-36 sm:h-36 blur-3xl opacity-40"></div>
 
         {/* Content */}
         <h2 className="mb-4 text-3xl font-bold text-blue-400 sm:text-4xl sm:mb-6">
-          Get in Touch !
+          Get in Touch!
         </h2>
         <p className="mb-6 text-base text-gray-400 sm:text-lg sm:mb-8">
           Have a question or just want to say hello? Click the button below to send me an email. I look forward to hearing from you!
