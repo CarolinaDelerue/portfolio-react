@@ -1,7 +1,7 @@
 import CardSkills from '../components/CardSkills';
 import LogoSkills from '../components/LogoSkills'
 
-function SkillsPage() {
+function App() {
   const webIntegrationSkills = [
     "Integrate content according to a layout with HTML and CSS",
     "Implement a responsive interface with HTML and CSS",
@@ -159,4 +159,4 @@ function SkillsPage() {
   );
 }
 
-export default SkillsPage;
+export default App;

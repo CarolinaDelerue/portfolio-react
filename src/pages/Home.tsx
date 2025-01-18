@@ -32,9 +32,7 @@ const Home = () => {
                         title="Say hello"
                         description="for a job offer or just to connect."
                         link="/contact"
-                        icon="🤘"
-                        backgroundImage="/assets/background.png"
-                    />
+                        icon="🤘"                    />
                 </div>
             </div>
         </div>
