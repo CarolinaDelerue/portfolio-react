@@ -6,9 +6,9 @@ interface CardSkillsProps {
   backgroundImage?: string;
   title?: string;
   description?: string;
-  softSkills?: string[]; // Liste des soft skills
+  softSkills?: string[];
   className?: string;
-  techLogos?: string[]; // Liste des technologies sous forme de chaînes de caractères
+  techLogos?: string[];
 }
 
 const CardSkills: FC<CardSkillsProps> = ({
@@ -17,9 +17,9 @@ const CardSkills: FC<CardSkillsProps> = ({
   description,
   softSkills,
   className = '',
-  techLogos, // Liste des technologies
+  techLogos,
 }) => {
-  // Dictionnaire pour mapper les noms des technologies aux icônes correspondantes
+
   const iconMap: { [key: string]: JSX.Element } = {
     React: <FaReact className="text-2xl text-white" />,
     TailwindCSS: <SiTailwindcss className="text-2xl text-white" />,
@@ -34,7 +34,7 @@ const CardSkills: FC<CardSkillsProps> = ({
     Safari: <SiSafari className="text-2xl text-white" />,
     Firefox: <SiFirefox className="text-2xl text-white" />,
     Netlify: <SiNetlify className="text-2xl text-white" />,
-    Vercel: <SiVite className="text-2xl text-white" />, // Si pas d'icône spécifique, utilisez Vite
+    Vercel: <SiVite className="text-2xl text-white" />,
     Nuxt: <SiNuxtdotjs className="text-2xl text-white" />,
     Node: <FaNodeJs className="text-2xl text-white" />,
     Express: <SiExpress className="text-2xl text-white" />,
@@ -55,8 +55,8 @@ const CardSkills: FC<CardSkillsProps> = ({
       style={containerStyle}
       className={`flex flex-col items-start w-full h-auto max-w-md p-6 transition-transform duration-300 bg-gray-900 shadow-lg rounded-3xl cursor-pointer hover:scale-105 ${className}`}
     >
-      {/* Title and Description */}
-      {title && <h3 className="text-xl font-semibold text-white">{title}</h3>}
+
+      {title && <h2 className="text-xl font-semibold text-white">{title}</h2>}
       {description && <p className="mt-1 text-sm text-gray-400">{description}</p>}
 
       {/* Soft Skills List */}
@@ -68,7 +68,6 @@ const CardSkills: FC<CardSkillsProps> = ({
         </ul>
       )}
 
-      {/* Tech Logos */}
       {techLogos && techLogos.length > 0 && (
         <div
           className="flex flex-wrap justify-start mt-4 space-x-4"
@@ -78,7 +77,7 @@ const CardSkills: FC<CardSkillsProps> = ({
             <div key={index} className="flex items-center justify-center w-12 h-12">
               {iconMap[tech] || (
                 <span className="text-sm text-gray-400">Icon manquante</span>
-              )} {/* Affiche l'icône correspondante ou un texte par défaut */}
+              )}
             </div>
           ))}
         </div>

@@ -1,6 +1,15 @@
 import React from "react";
 
-const LogoSkills = ({ techLogos }) => {
+interface Logo {
+  src: string;
+  alt: string;
+  style?: React.CSSProperties;
+}
+interface LogoSkillsProps {
+  techLogos: Logo[];
+}
+
+const LogoSkills: React.FC<LogoSkillsProps> = ({ techLogos }) => {
   return (
     <div className="flex flex-wrap justify-center grid-cols-6 gap-6 mb-16 lg:flex">
       {techLogos.map((logo, index) => (

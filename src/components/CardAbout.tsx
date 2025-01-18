@@ -9,7 +9,7 @@ interface CardAboutProps {
   imageSrc?: string;
   link?: string;
   className?: string;
-  softSkills?: string[]; // Nouvelle propriété pour les soft skills
+  softSkills?: string[];
 }
 
 const CardAbout: FC<CardAboutProps> = ({
@@ -20,7 +20,7 @@ const CardAbout: FC<CardAboutProps> = ({
   imageSrc,
   link,
   className = '',
-  softSkills, // Extraction de la propriété softSkills
+  softSkills,
 }) => {
   const navigate = useNavigate();
 
@@ -51,7 +51,6 @@ const CardAbout: FC<CardAboutProps> = ({
       {description && (
         <p className="mt-1 text-sm text-gray-400">{description}</p>
       )}
-      {/* Affichage des soft skills */}
       {softSkills && softSkills.length > 0 && (
         <ul className="mt-2 text-sm text-gray-400 list-disc list-inside">
           {softSkills.map((skill, index) => (

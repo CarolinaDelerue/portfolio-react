@@ -62,7 +62,7 @@ const Header: React.FC = () => {
               <Link
                 to="/"
                 className="text-white hover:text-gray-400"
-                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+                onClick={() => setMenuOpen(false)}
               >
                 Home
               </Link>
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
               <Link
                 to="/about"
                 className="text-white hover:text-gray-400"
-                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+                onClick={() => setMenuOpen(false)}
               >
                 About
               </Link>
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
               <Link
                 to="/projects"
                 className="text-white hover:text-gray-400"
-                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+                onClick={() => setMenuOpen(false)}
               >
                 Projects
               </Link>
@@ -89,7 +89,7 @@ const Header: React.FC = () => {
               <Link
                 to="/skills"
                 className="text-white hover:text-gray-400"
-                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+                onClick={() => setMenuOpen(false)}
               >
                 Skills
               </Link>
@@ -98,7 +98,7 @@ const Header: React.FC = () => {
               <Link
                 to="/contact"
                 className="text-white hover:text-gray-400"
-                onClick={() => setMenuOpen(false)} // Ferme le menu burger sur mobile
+                onClick={() => setMenuOpen(false)}
               >
                 Contact
               </Link>

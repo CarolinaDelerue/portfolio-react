@@ -37,9 +37,6 @@ const Home = () => {
                     />
                 </div>
             </div>
-            {/* <div>
-                <MindCard/>
-            </div> */}
         </div>
     );
 }

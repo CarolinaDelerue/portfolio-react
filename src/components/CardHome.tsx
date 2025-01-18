@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 
 interface CardHomeProps {
-  backgroundImage?: string; // URL de l'image de fond (facultatif)
-  title?: string; // Titre de la carte (facultatif)
-  description?: string; // Description de la carte (facultatif)
-  icon?: React.ReactNode; // Icône ou élément JSX (facultatif)
-  imageSrc?: string; // Source de l'image (facultatif)
-  link: string; // Lien vers la navigation (obligatoire)
-  className?: string; // Classes supplémentaires (facultatif)
+  backgroundImage?: string;
+  title?: string;
+  description?: string;
+  icon?: React.ReactNode;
+  imageSrc?: string;
+  link: string;
+  className?: string;
 }
 
 const CardHome: React.FC<CardHomeProps> = ({
@@ -17,7 +17,7 @@ const CardHome: React.FC<CardHomeProps> = ({
   icon,
   imageSrc,
   link,
-  className = '', // Classe par défaut vide
+  className = '',
 }) => {
   const navigate = useNavigate();
 
