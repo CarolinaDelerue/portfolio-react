@@ -27,7 +27,6 @@ const Header: React.FC = () => {
   return (
     <header className="p-4 bg-gray-800 shadow-md">
       <div className="container flex items-center justify-between mx-auto">
-        {/* Logo ou nom du portfolio */}
         <h1 className="text-2xl font-bold text-white">My Portfolio</h1>
 
         {/* Icône du menu burger (visible sur mobile uniquement) */}
@@ -55,7 +54,7 @@ const Header: React.FC = () => {
         <nav
           className={`${
             menuOpen ? 'block' : 'hidden'
-          } absolute top-16 right-0 bg-gray-700 w-full p-4 space-y-4 z-50 md:space-y-0 md:static md:w-auto md:flex md:justify-end md:bg-transparent`}
+          } absolute top-16 right-0 bg-gray-700 w-full p-4 space-y-4 z-100 md:space-y-0 md:static md:w-auto md:flex md:justify-end md:bg-transparent`}
         >
           <ul className="flex flex-col items-end space-y-4 md:flex-row md:space-x-8 md:space-y-0">
             <li>

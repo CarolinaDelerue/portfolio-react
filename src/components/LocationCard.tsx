@@ -13,7 +13,7 @@ const LocationCard: React.FC = () => {
 
   return (
     <div className="w-full max-w-md p-4 mx-auto bg-gray-900 shadow-lg rounded-2xl">
-      <div className="relative w-full h-64 overflow-hidden bg-white rounded-lg">
+      <div className="w-full h-64 overflow-hidden bg-white rounded-lg">
         <img
           src="/assets/map-bordeaux.png"
           alt="Map"
