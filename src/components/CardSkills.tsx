@@ -77,7 +77,7 @@ const CardSkills: FC<CardSkillsProps> = ({
           {techLogos.map((tech, index) => (
             <div key={index} className="flex items-center justify-center w-12 h-12">
               {iconMap[tech] || (
-                <span className="text-sm text-gray-400">Icone manquante</span>
+                <span className="text-sm text-gray-400">Icon manquante</span>
               )} {/* Affiche l'icône correspondante ou un texte par défaut */}
             </div>
           ))}

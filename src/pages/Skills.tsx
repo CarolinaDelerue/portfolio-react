@@ -1,7 +1,7 @@
 import CardSkills from '../components/CardSkills';
-import BannerIcon from '../components/BannerIcon';
+import LogoSkills from '../components/LogoSkills'
 
-function App() {
+function SkillsPage() {
   const webIntegrationSkills = [
     "Intégrer du contenu conformément à une maquette avec HTML et CSS",
     "Implémenter une interface responsive avec HTML et CSS",
@@ -45,16 +45,57 @@ function App() {
 
   const openSourceSkills = ["Contributrice à l'open source - Nuxt"];
 
+
+
+  const techLogos = [
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      alt: "React",
+    },
+    {
+      src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      alt: "TailwindCSS",
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      alt: "JavaScript",
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      alt: "TypeScript",
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      alt: "Node.js",
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+      alt: "Vue.js",
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
+      alt: "Nuxt.js",
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      alt: "GitHub",
+      style: { filter: "invert(1) brightness(2)" }, // Logo en blanc
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      alt: "HTML5",
+    },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      alt: "CSS3",
+    },
+  ];
+
+
   return (
     <>
-      {/* Bannière pleine page
-      <div className="mt-16">
-        <BannerIcon />
-      </div> */}
-
-      {/* Contenu principal */}
       <div className="container px-4 mx-auto mt-12">
-        <h1 className="py-12 text-2xl font-bold text-center text-white sm:text-3xl md:text-4xl">
+        <h1 className="py-12 text-2xl font-bold text-center text-white sm:text-3xl md:text-6xl">
           My skills
         </h1>
         <div className="grid grid-cols-1 gap-6 px-4 py-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -107,9 +148,18 @@ function App() {
             techLogos={['Nuxt']}
           />
         </div>
+        <div className='flex flex-col items-center gap-12 mt-6'>
+        <div>
+          <h2 className="text-2xl font-bold text-center text-white">My skills</h2>
+          <p className="text-xl font-bold text-center text-white">Here are my skills, but I am eager to learn more!</p>
+        </div>
+        <div>
+        <LogoSkills techLogos={techLogos} />
+        </div>
+        </div>
       </div>
     </>
   );
 }
 
-export default App;
+export default SkillsPage;

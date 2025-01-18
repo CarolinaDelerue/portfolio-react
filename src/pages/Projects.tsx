@@ -44,6 +44,15 @@ const Projects: React.FC = () => {
       imageSrc: '/assets/nuxtship.png',
     },
     {
+      title: 'Nina Carducci',
+      description: 'Creation of an e-commerce website.',
+      challenge: 'Creation of an e-commerce template with React',
+      skills: ['React', 'JSX', 'CSS'],
+      link: 'https://nina-carducci-react.netlify.app/',
+      imageSrc: '/assets/nina.png',
+    },
+
+    {
       title: 'Podiatrist website',
       description: 'Creation of templates in the healthcare field.',
       challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
@@ -80,7 +89,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-8">
       <div className="container px-4 mx-auto">
-        <h2 className="mb-6 text-3xl font-bold text-gray-800">My Projects</h2>
+        <h2 className="mb-12 text-6xl font-bold text-center text-white">My Projects</h2>
         <div className="flex flex-col gap-6">
           {projects.map((project, index) => (
             <CustomCard

@@ -2,12 +2,10 @@ import CardAbout from '../components/CardAbout';
 
 const About = () => {
   return (
-    <div className="container p-4 mx-auto">
-      <h1 className="mb-8 text-2xl font-bold text-center text-white">
+    <div className="container p-4 mx-auto mt-12">
+      <h1 className="mb-12 text-6xl font-bold text-center text-white">
         About Me
       </h1>
-
-      {/* Premier bloc : Image + Texte */}
       <div className="flex flex-col items-center gap-6 md:flex-row">
         <img
           src="src/assets/photo2022.jpg"
@@ -26,8 +24,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      {/* Second bloc : Les deux cartes */}
       <div className="flex flex-col items-center justify-center gap-6 mt-8 md:flex-row">
         <CardAbout
           title="I am also a contributor to the open-source Nuxt.js framework!"
