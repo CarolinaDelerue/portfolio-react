@@ -10,7 +10,7 @@ interface Project {
   imageSrc: string;
 }
 
-const Projects: React.FC<void> = () => {
+const Projects = () => {
   const projects: Project[] = [
     {
       title: 'Tina',
