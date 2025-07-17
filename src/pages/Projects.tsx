@@ -1,3 +1,4 @@
+import React from 'react';
 import CustomCard from '../components/CardProjects';
 
 interface Project {
@@ -9,94 +10,93 @@ interface Project {
   imageSrc: string;
 }
 
-const Projects: React.FC = () => {
+const Projects: React.FC<void> = () => {
   const projects: Project[] = [
-        {
+    {
       title: 'Tina',
-      description: 'E-commerce site in the healthcare sector',
-      challenge: 'Selling screening kits for AMD',
-      skills: ['Nuxt', 'Nuxt UI', 'Vue', 'HTML', 'CSS' ],
+      description: 'E-commerce site in the healthcare sector.',
+      challenge: 'Selling screening kits for AMD.',
+      skills: ['Nuxt', 'Nuxt UI', 'Vue', 'HTML', 'CSS'],
       link: 'https://www.tina.vision/',
       imageSrc: '/assets/tina.png',
     },
     {
       title: 'Retinov',
-      description: 'Company website',
-      challenge: 'Company website',
-      skills: ['Nuxt', 'Nuxt UI', 'Vue', 'HTML', 'CSS' ],
+      description: 'Corporate website in the healthcare sector.',
+      challenge: 'Building a static site to showcase the company.',
+      skills: ['Nuxt', 'Nuxt UI', 'Vue', 'HTML', 'CSS'],
       link: 'https://www.retinov.com/',
       imageSrc: '/assets/retinov.png',
     },
     {
       title: 'E-commerce Booking Website',
-      description: 'Replicated a Figma mockup in HTML/CSS for an apartment booking website.',
-      challenge: 'Reproducing the mockup pixel-perfect.',
+      description: 'HTML/CSS implementation of a Figma mockup for a booking platform.',
+      challenge: 'Achieving a pixel-perfect replica of the design.',
       skills: ['HTML', 'CSS', 'Figma'],
       link: 'https://booki-webapp.netlify.app',
       imageSrc: '/assets/booki.png',
     },
     {
       title: 'Kasa',
-      description: 'Redesign of a website for renting apartments between individuals, using React and Figma mockups.',
-      challenge: 'Creating reusable components in React for managing the photo gallery and detailed information about the apartments.',
-      skills: ['React', 'JSX', 'CSS', 'Figma', 'state management'],
+      description: 'Redesign of a rental platform using React and Figma mockups.',
+      challenge: 'Creating reusable React components for photo galleries and apartment details.',
+      skills: ['React', 'JSX', 'CSS', 'Figma', 'State Management'],
       link: 'https://kasa-cd.netlify.app/',
       imageSrc: '/assets/kasa.png',
     },
     {
       title: 'Portfolio',
-      description: 'Creation of my portfolio',
-      challenge: 'Creation of my portfolio with React',
+      description: 'Development of my personal portfolio site.',
+      challenge: 'Building a responsive portfolio with React.',
       skills: ['React', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://portfolio-react-caro.netlify.app/',
       imageSrc: '/assets/portfolio.png',
     },
     {
       title: 'NuxtShip',
-      description: 'Creation of an e-commerce website.',
-      challenge: 'Creation of an e-commerce template with Nuxt Content.',
-      skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Tailwind CSS', 'Responsive Design'],
+      description: 'E-commerce template using Nuxt Content.',
+      challenge: 'Building a customizable template with markdown integration.',
+      skills: ['Nuxt', 'Nuxt Content', 'Markdown', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://nuxtship.vercel.app/',
       imageSrc: '/assets/nuxtship.png',
     },
     {
       title: 'Nina Carducci',
-      description: 'Creation of an e-commerce website.',
-      challenge: 'Creation of an e-commerce template with React',
+      description: 'E-commerce site built with React.',
+      challenge: 'Creating a customizable React template.',
       skills: ['React', 'JSX', 'CSS'],
       link: 'https://nina-carducci-react.netlify.app/',
       imageSrc: '/assets/nina.png',
     },
-
     {
-      title: 'Podiatrist website',
-      description: 'Creation of templates in the healthcare field.',
-      challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
-      skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
+      title: 'Podiatrist Website',
+      description: 'Healthcare template website.',
+      challenge: 'Enabling content customization via Markdown.',
+      skills: ['Nuxt', 'Nuxt Content', 'Markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://podiatrist.nuxt.space/',
       imageSrc: '/assets/podiatrist.png',
     },
     {
-      title: 'Kine website',
-      description: 'Creation of templates in the healthcare field.',
-      challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
-      skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
+      title: 'Kine Website',
+      description: 'Healthcare template website.',
+      challenge: 'Enabling content customization via Markdown.',
+      skills: ['Nuxt', 'Nuxt Content', 'Markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://kine.nuxt.space/',
       imageSrc: '/assets/kine.png',
     },
     {
-      title: 'Doctor website',
-      description: 'Creation of templates in the healthcare field.',
-      challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
-      skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
+      title: 'Doctor Website',
+      description: 'Healthcare template website.',
+      challenge: 'Enabling content customization via Markdown.',
+      skills: ['Nuxt', 'Nuxt Content', 'Markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://doctor.nuxt.space/',
       imageSrc: '/assets/doctor.png',
     },
     {
-      title: 'Psychologist website',
-      description: 'Creation of templates in the healthcare field.',
-      challenge: 'Create a template allowing the site to be customized through the integration of Markdown.',
-      skills: ['Nuxt', 'Nuxt-content', 'markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
+      title: 'Psychologist Website',
+      description: 'Healthcare template website.',
+      challenge: 'Enabling content customization via Markdown.',
+      skills: ['Nuxt', 'Nuxt Content', 'Markdown', 'Studio', 'Tailwind CSS', 'Responsive Design'],
       link: 'https://psychologist.nuxt.space/',
       imageSrc: '/assets/psychologist.png',
     },
@@ -107,15 +107,14 @@ const Projects: React.FC = () => {
       <div className="container px-4 mx-auto">
         <h2 className="mb-12 text-6xl font-bold text-center text-white">My Projects</h2>
         <div className="flex flex-col gap-6">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <CustomCard
-              key={index}
+              key={project.title}
               imageSrc={project.imageSrc}
               title={project.title}
               description={project.description}
               challenge={project.challenge}
               tags={project.skills}
-              // linkIcon=""
               linkUrl={project.link}
             />
           ))}
