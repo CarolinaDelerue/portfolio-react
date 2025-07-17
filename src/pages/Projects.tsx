@@ -11,6 +11,22 @@ interface Project {
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
+        {
+      title: 'Tina',
+      description: 'E-commerce site in the healthcare sector',
+      challenge: 'Selling screening kits for AMD',
+      skills: ['Nuxt', 'Nuxt UI', 'Vue', 'HTML', 'CSS' ],
+      link: 'https://www.tina.vision/',
+      imageSrc: '/assets/tina.png',
+    },
+    {
+      title: 'Retinov',
+      description: 'Company website',
+      challenge: 'Company website',
+      skills: ['Nuxt', 'Nuxt UI', 'Vue', 'HTML', 'CSS' ],
+      link: 'https://www.retinov.com/',
+      imageSrc: '/assets/retinov.png',
+    },
     {
       title: 'E-commerce Booking Website',
       description: 'Replicated a Figma mockup in HTML/CSS for an apartment booking website.',
